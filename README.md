@@ -24,6 +24,17 @@ Wrapping your LLM with the standard LLM interface allow you to use your LLM in e
 As an bonus, your LLM will automatically become a LangChain Runnable and will benefit from some optimizations out of the box, async support, the astream_events API, etc.
 So let's do it. In this example we will connect Langchain to Llama-3–8b, but the process is the same (with few little tricks) for all the others Gradio API on the Hugging Face Hub Demo applications.
 
+
+Google Colab Notebook 📚 [here](https://github.com/fabiomatricardi/GradioLangchainCustomLLM/raw/main/Gradio%2BLangChain%3DFreeAI_Agents.ipynb)
+
+
+### 🌟 The results:
+
+<img src='https://github.com/fabiomatricardi/GradioLangchainCustomLLM/raw/main/GradiolangChainStreaming.gif' width=900>
+
+
+### 💻 The Code
+
 ```
 %pip install --upgrade --quiet  gradio_tools huggingface_hub langchain
 
@@ -130,7 +141,7 @@ class GradioClientChat(LLM):
             yield chunk
 ```
 
-### To run the inference:
+### ⚠️ To run the inference:
 
 ```
 llm = GradioClientChat()
@@ -145,7 +156,7 @@ print(result)
 ```
 
 
-### To run the inference wit streaming effect:
+### 🥂 To run the inference wit streaming effect:
 
 ```
 final = ''

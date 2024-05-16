@@ -2,6 +2,7 @@
 How to build a Custom LLM wrapping a Gradio API call into Langchain
 
 
+Full explanation in [Medium article here](https://medium.com/generative-ai/i-hacked-the-ai-agents-now-you-can-have-them-all-for-free-08cae7d29714)
 ---
 
 > What I'm seeing with AI agents is an exciting trend that I believe everyone building AI should pay attention to…
